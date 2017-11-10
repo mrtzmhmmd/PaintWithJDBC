@@ -12,11 +12,15 @@ public abstract class Shape {
 	protected User user;
 	protected int type;
 
+	public Shape() {
+
+	}
+
 	public Shape(Color color, Point start, Point end, User user) {
-		this.color = color;
-		this.start = start;
-		this.end = end;
-		this.user = user;
+		setColor(color);
+		setStart(start);
+		setEnd(end);
+		setUser(user);
 	}
 
 	public void setColor(Color color) {
@@ -27,12 +31,24 @@ public abstract class Shape {
 		return color;
 	}
 
+	public void setStart(Point start) {
+		this.start = start;
+	}
+
 	public Point getStart() {
 		return start;
 	}
 
+	public void setEnd(Point end) {
+		this.end = end;
+	}
+
 	public Point getEnd() {
 		return end;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
 	}
 
 	public User getUser() {

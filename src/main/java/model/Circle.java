@@ -9,6 +9,10 @@ public class Circle extends Shape {
 
 	private int radius;
 
+	public Circle() {
+
+	}
+
 	public Circle(Color color, Point start, Point end, User user) {
 		super(color, start, end, user);
 		this.type = 2;

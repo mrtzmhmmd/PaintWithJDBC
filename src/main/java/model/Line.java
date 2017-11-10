@@ -8,6 +8,10 @@ import java.awt.geom.Line2D;
 
 public class Line extends Shape {
 
+	public Line() {
+		
+	}
+	
 	public Line(Color color, Point start, Point end, User user) {
 		super(color, start, end, user);
 		this.type = 3;
