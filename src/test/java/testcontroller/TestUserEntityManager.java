@@ -24,9 +24,9 @@ public class TestUserEntityManager {
 	
 	@Test
 	public void testAddUser() throws NoSuchAlgorithmException, SQLException {
-		String name = "Amin";
+		String name = "Mahdi";
 		String family = "Amini";
-		String username = "Amin";
+		String username = "Mahdi";
 		String password = MD5.getDigest("123");
 		User user = new User(name, family, username, password);
 		boolean bool = userEntityManager.addUser(user);

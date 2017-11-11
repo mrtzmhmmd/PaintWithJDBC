@@ -24,6 +24,7 @@ public class TestCircle {
 		circle.setColor(Color.GREEN);
 		circle.setStart(new Point(100, 102));
 		circle.setEnd(new Point(200, 202));
-		assertTrue(circle.contains(new Point(100, 102)));
+		Boolean boolean1 = circle.contains(new Point(100, 102));
+		assertTrue(boolean1);
 	}
 }

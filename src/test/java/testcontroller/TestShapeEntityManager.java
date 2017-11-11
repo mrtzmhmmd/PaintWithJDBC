@@ -36,4 +36,15 @@ public class TestShapeEntityManager {
 		}
 		assertTrue(boolean1);
 	}
+	
+	@Test
+	public void testSaveShape() throws SQLException {
+		Boolean boolean1 = false;
+		Shape shape = new Circle(Color.BLACK, new Point(400, 50), new Point(451,  98), user);
+		shapeEntityManager.saveShape(shape);
+		ArrayList<Shape> shapes = shapeEntityManager.loadShape();
+		if(shapes.contains(shape))
+			boolean1 = true;
+		assertTrue(boolean1);
+	}
 }

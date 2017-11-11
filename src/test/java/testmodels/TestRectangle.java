@@ -14,7 +14,7 @@ import model.Rectangle;
 public class TestRectangle {
 
 	private static Rectangle rectangle;
-
+	
 	@BeforeClass
 	public static void startup() {
 		rectangle = new Rectangle();
