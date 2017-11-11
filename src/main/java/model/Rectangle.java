@@ -7,6 +7,10 @@ import java.awt.Point;
 
 public class Rectangle extends Shape {
 
+	public Rectangle() {
+		
+	}
+	
 	public Rectangle(Color color, Point start, Point end, User user) {
 		super(color, start, end, user);
 		this.type = 1;

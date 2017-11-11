@@ -17,7 +17,7 @@ public class TestLine {
 	public static void startup() {
 		line = new Line();
 	}
-	
+
 	@Test
 	public void testLineContains() {
 		line.setColor(Color.GREEN);
@@ -25,5 +25,4 @@ public class TestLine {
 		line.setEnd(new Point(200, 202));
 		assertTrue(line.contains(new Point(150, 152)));
 	}
-
 }
