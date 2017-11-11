@@ -66,4 +66,10 @@ public abstract class Shape {
 	public abstract void draw(Graphics g);
 
 	public abstract boolean contains(Point point);
+
+	@Override
+	public String toString() {
+		return "Shape [color=" + color + ", start=" + start + ", end=" + end + ", user=" + user + ", type=" + type
+				+ "]";
+	}
 }

@@ -222,15 +222,15 @@ public class Paint {
 	}
 
 	public static String colorToString(Color c) {
-		if (c.equals(Color.black))
+		if (c.equals(Color.BLACK))
 			return "Black";
-		else if (c.equals(Color.blue))
+		else if (c.equals(Color.BLUE))
 			return "Blue";
-		else if (c.equals(Color.green))
+		else if (c.equals(Color.GREEN))
 			return "Green";
-		else if (c.equals(Color.red))
+		else if (c.equals(Color.RED))
 			return "Red";
-		else if (c.equals(Color.yellow))
+		else if (c.equals(Color.YELLOW))
 			return "Yellow";
 		return "Cyan";
 	}
