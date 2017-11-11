@@ -6,21 +6,21 @@ public class User {
 	private String family;
 	private String username;
 	private String password;
-
+	
+	public User(String username) {
+		this.username = username;
+	}
+	
+	public User(String username, String password) {
+		this.username = username;
+		this.password = password;
+	}
+	
 	public User(String name, String family, String username, String password) {
 		this.name = name;
 		this.family = family;
 		this.username = username;
 		this.password = password;
-	}
-
-	public User(String username, String password) {
-		this.username = username;
-		this.password = password;
-	}
-
-	public User(String username) {
-		this.username = username;
 	}
 
 	public String getName() {
